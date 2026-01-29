@@ -10,7 +10,7 @@ const App = () => {
     const [searchText, setSearchText] = useState([]);
 
     const api_key = "7e0fca7f";
-    const api_end_point = "http://www.omdbapi.com";
+    const api_end_point = "https://www.omdbapi.com";
     const searchMovies = async (movieName) => {
         const response = await fetch(
             `${api_end_point}?apikey=${api_key}&s=${movieName}`
